@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "vitest/globals"],
+    "noEmit": true,
+    "isolatedModules": false,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": false,
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@tests/*": ["tests/*"]
+    },
+    "rootDir": "."
+  },
+  "include": [
+    "src/**/*",
+    "tests/**/*",
+    "vitest.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

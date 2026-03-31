@@ -1,0 +1,71 @@
+{
+  "name": "@endpoint-fetcher/auth",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Authentication plugin for endpoint-fetcher — JWT, OAuth2, API Key, Basic, Bearer, HMAC, Digest, and Custom strategies",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "watch": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:typecheck": "vitest run --typecheck"
+  },
+  "keywords": [
+    "endpoint-fetcher",
+    "plugin",
+    "auth",
+    "authentication",
+    "jwt",
+    "oauth2",
+    "api-key",
+    "hmac",
+    "digest",
+    "bearer",
+    "fetch",
+    "typescript",
+    "type-safe"
+  ],
+  "author": "Lorenzo Vecchio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzo-vecchio/endpoint-fetcher-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lorenzo-vecchio/endpoint-fetcher-auth/issues"
+  },
+  "homepage": "https://endpoint-fetcher.lorenzovecchio.dev/plugins/auth_plugin",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "endpoint-fetcher": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "@vitest/ui": "^4.0.18",
+    "endpoint-fetcher": "^3.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.18"
+  }
+}
