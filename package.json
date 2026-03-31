@@ -1,6 +1,6 @@
 {
   "name": "@endpoint-fetcher/auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Authentication plugin for endpoint-fetcher — JWT, OAuth2, API Key, Basic, Bearer, HMAC, Digest, and Custom strategies",
   "main": "./dist/index.cjs",
