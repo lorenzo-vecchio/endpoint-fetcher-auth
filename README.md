@@ -1,5 +1,7 @@
 # @endpoint-fetcher/auth
 
+![NPM Downloads](https://img.shields.io/npm/d18m/%40endpoint-fetcher%2Fauth?style=for-the-badge)
+
 An authentication plugin for [endpoint-fetcher](https://endpoint-fetcher.lorenzovecchio.dev/) supporting JWT, OAuth2, API Key, Basic, Bearer, HMAC, Digest, and Custom strategies.
 
 ## Installation
